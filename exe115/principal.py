@@ -9,14 +9,18 @@ if not arquivoExiste(arq):
 
 cabeçalho('SISTEMA ARQUIVO v1.0')
 while True:
-    p = menu(['Ver Pessoas Cadastradas', 'Cadastrar Pessoas', 'Listar Pessoas', 'Sair do Programa'])
+    p = menu(['Ver Pessoas Cadastradas', 'Cadastrar nova Pessoa', 'Sair do Programa'])
     if p == 1:
         # ler arquivo para cadastro de pessoas
         lerarquivo(arq)
     elif p == 2:
-        cabeçalho('Opçao 2')
-    elif p == 4:
+        # Cadastrando nova pessoa
+        cabeçalho('NOVO CADASTRO')
+        nome = str(input('Nome: '))
+        idade = leiaint('Idade: ')
+        cadastro(arq, nome, idade)
+    elif p == 3:
         cabeçalho('Saindo do Programa')
         break
     else:
-        cabeçalho('Opçao invalida')
+        print('Opçao invalida')

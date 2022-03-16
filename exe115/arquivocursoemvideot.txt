@@ -1,7 +1,5 @@
-Henrique; 22
-Beatriz; 19
-Marcos; 26
-Brenda; 28
-Wiliane; 15
-Moacir; 51
-Vera; 45
+henrique;22
+Alvaro;33
+henrique;22
+Alvaro;33
+Marcos;26
